@@ -19,7 +19,7 @@ const getId = async (req, res) => {
         res.status(500).send(error.message);
     }
 }
-// Adicionando função de like
+// Adicionando função like
 const like = (req, res) => {
 
     const { id } = req.params;
@@ -34,6 +34,20 @@ const like = (req, res) => {
     res.status(200).send(found);
 
 
+}
+// Adicionando função unlike
+const unlike = async (req, res) => {
+    try {
+        const { id } = req.params
+        brands = await brandsSchema.findById(id);
+
+        brands.likes -= 1
+
+        await estabelecimentoCollection.updateOne(brands)
+        return res.status(200).send(brands)
+    } catch(error) {
+        return res.status(404).send({ message: "Empresa/marca não encontrada." })
+    }
 }
 // CREATING ONE
 const createBrand = async (req, res) => {
@@ -62,8 +76,8 @@ const update = async (req, res) => {
         const body = req.body
         const update = {new: true}
 
-        const estabelecimento = await brandsSchema.findByIdAndUpdate(id, body, update)
-        return res.status(200).send(estabelecimento)
+        const brands = await brandsSchema.findByIdAndUpdate(id, body, update)
+        return res.status(200).send(brands)
     } catch (error) {
         return res.status(404).send({message: 'Marca/empresa não encontrada!'})
     }
@@ -86,6 +100,7 @@ module.exports = {
     getAll,
     getId,
     like,
+    unlike,
     createBrand,
     update,
     deleteBrand
