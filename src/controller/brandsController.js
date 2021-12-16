@@ -2,15 +2,23 @@ const brandsSchema = require('../models/brandsSchema')
 const mongoose = require('mongoose');
 
 // GET ALL
-const getAll = async (req, res) => {
-    try {
-        const brandFound = await brandsSchema.find();
-        res.status(200).send(brandFound);
-    } catch (error) {
-        res.status(500).send(error.message);
+const getAll = async(req, res) => {
+    const { category, country } = req.query
+    
+    const filters = {}
+
+    if (category) {
+        filters.category = category
     }
+
+    if (country) {
+        filters.country = country
+    }
+
+    const brands = await brandsSchema.find(filters)
+    return res.status(200).send(brands)
 }
-// GET ONE
+// Busca por id
 const getId = async (req, res) => {
     try {
         const brandFound = await brandsSchema.findById(req.params.id);
@@ -29,7 +37,7 @@ const like = async (req, res) => {
 
         await brandsSchema.updateOne(brands)
         return res.status(200).send(brands)
-    } catch(error) {
+    } catch (error) {
         return res.status(404).send({ message: 'Empresa/marca não encontrada!' })
     }
 }
@@ -44,7 +52,7 @@ const unlike = async (req, res) => {
 
         await brandsSchema.updateOne(brands)
         return res.status(200).send(brands)
-    } catch(error) {
+    } catch (error) {
         return res.status(404).send({ message: "Empresa/marca não encontrada!" })
     }
 }
@@ -62,7 +70,7 @@ const createBrand = async (req, res) => {
         res.status(201).json({
             brands: brandSave
         })
-    } catch(error) {
+    } catch (error) {
         res.status(400).json({
             message: error.message,
         })
@@ -73,12 +81,12 @@ const update = async (req, res) => {
     try {
         const { id } = req.params
         const body = req.body
-        const update = {new: true}
+        const update = { new: true }
 
         const brands = await brandsSchema.findByIdAndUpdate(id, body, update)
         return res.status(200).send(brands)
     } catch (error) {
-        return res.status(404).send({message: 'Marca/empresa não encontrada!'})
+        return res.status(404).send({ message: 'Marca/empresa não encontrada!' })
     }
 }
 //DELETE 
@@ -90,7 +98,7 @@ const deleteBrand = async (req, res) => {
 
         return res.status(204).send()
     } catch (error) {
-        return res.status(404).send({ message: 'Marca/empresa não encontrada!'})
+        return res.status(404).send({ message: 'Marca/empresa não encontrada!' })
     }
 }
 

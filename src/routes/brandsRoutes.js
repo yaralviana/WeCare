@@ -7,7 +7,7 @@ router.get('/:id', controller.getId)
 router.patch("/:id/like", controller.like)
 router.patch("/:id/unlike", controller.unlike)
 router.post("/create", controller.createBrand)
-router.put('/update', controller.update)
-router.delete('/delete', controller.deleteBrand)
+router.put('/:id/update', controller.update)
+router.delete('/:id/delete', controller.deleteBrand)
 
 module.exports = router

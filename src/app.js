@@ -11,6 +11,6 @@ app.use(cors())
 app.use(express.json())
 app.use("/brands", brandsRoutes)
 
-db.connect() 
+db.connect()
 
 module.exports = app
