@@ -55,12 +55,38 @@ const createBrand = async (req, res) => {
         })
     }
 }
+//UPDATE ONE
+const update = async (req, res) => {
+    try {
+        const { id } = req.params
+        const body = req.body
+        const update = {new: true}
 
+        const estabelecimento = await brandsSchema.findByIdAndUpdate(id, body, update)
+        return res.status(200).send(estabelecimento)
+    } catch (error) {
+        return res.status(404).send({message: 'Marca/empresa não encontrada!'})
+    }
+}
+//DELETE 
+const deleteBrand = async (req, res) => {
+    try {
+        const { id } = req.params
+
+        await brandsSchema.findByIdAndDelete(id)
+
+        return res.status(204).send()
+    } catch (error) {
+        return res.status(404).send({ message: 'Marca/empresa não encontrada!'})
+    }
+}
 
 
 module.exports = {
     getAll,
     getId,
     like,
-    createBrand
+    createBrand,
+    update,
+    deleteBrand
 }
