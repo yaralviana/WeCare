@@ -1,4 +1,4 @@
-const brandSchema = require('../models/brandsSchema')
+const brandsSchema = require('../models/brandsSchema')
 const mongoose = require('mongoose');
 
 // GET ALL
@@ -33,6 +33,27 @@ const like = (req, res) => {
 
     res.status(200).send(found);
 
+
+}
+// CREATING ONE
+const createBrand = async (req, res) => {
+    try {
+        const brands = new brandsSchema({
+            name: req.body.name,
+            category: req.body.category,
+            country: req.body.country,
+            likes: req.body.likes,
+            _id: new mongoose.Types.ObjectId()
+        })
+        const brandSave = await brands.save()
+        res.status(201).json({
+            brands: brandSave
+        })
+    } catch(error) {
+        res.status(400).json({
+            message: error.message,
+        })
+    }
 }
 
 
@@ -40,5 +61,6 @@ const like = (req, res) => {
 module.exports = {
     getAll,
     getId,
-    like
+    like,
+    createBrand
 }

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const brandSchema = new mongoose.Schema({
+const brandsSchema = new mongoose.Schema({
     id: mongoose.Schema.Types.ObjectId,
 
     name: {
@@ -22,4 +22,4 @@ const brandSchema = new mongoose.Schema({
       
 })
 
-module.exports = mongoose.model('brands', brandSchema)
+module.exports = mongoose.model('brands', brandsSchema)
