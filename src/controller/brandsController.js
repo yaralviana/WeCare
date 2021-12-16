@@ -20,21 +20,20 @@ const getId = async (req, res) => {
     }
 }
 // Adicionando função like
-const like = (req, res) => {
+const like = async (req, res) => {
+    try {
+        const { id } = req.params
+        brands = await brandsSchema.findById(id)
 
-    const { id } = req.params;
-    const found = models.find(brands => brands.id == id);
-    if (found == undefined) {
+        brands.likes += 1
 
-        res.status(404).send({message: "Empresa/marca não encontrada."});
-        
+        await brandsSchema.updateOne(brands)
+        return res.status(200).send(brands)
+    } catch(error) {
+        return res.status(404).send({ message: 'Empresa/marca não encontrada!' })
     }
-    found.likes += 1;
-
-    res.status(200).send(found);
-
-
 }
+
 // Adicionando função unlike
 const unlike = async (req, res) => {
     try {
@@ -43,10 +42,10 @@ const unlike = async (req, res) => {
 
         brands.likes -= 1
 
-        await estabelecimentoCollection.updateOne(brands)
+        await brandsSchema.updateOne(brands)
         return res.status(200).send(brands)
     } catch(error) {
-        return res.status(404).send({ message: "Empresa/marca não encontrada." })
+        return res.status(404).send({ message: "Empresa/marca não encontrada!" })
     }
 }
 // CREATING ONE

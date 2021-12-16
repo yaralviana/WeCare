@@ -17,7 +17,9 @@ const brandsSchema = new mongoose.Schema({
     },
     likes: {
         type: Number,
-    },
+        required: false,
+        default: 0
+    }
 
       
 })
