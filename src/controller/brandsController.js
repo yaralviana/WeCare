@@ -1,10 +1,10 @@
 const brandsSchema = require('../models/brandsSchema')
 const mongoose = require('mongoose');
 
-// GET ALL
-const getAll = async(req, res) => {
+// adiciona filtro por categoria e país
+const getAll = async (req, res) => {
     const { category, country } = req.query
-    
+
     const filters = {}
 
     if (category) {
