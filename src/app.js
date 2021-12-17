@@ -14,7 +14,7 @@ app.use("/brands", brandsRoutes)
 db.connect()
 
 app.get('/', (req, res) => {
-    res.send('Projeto: WeCare - Cadastra, atualiza e filtra marcas/empresas que não testam em animais! 🐇')
+    res.send('Projeto: WeCare - Cadastra, atualiza, deleta e filtra marcas/empresas que não testam em animais! 🐇')
 })
 
 module.exports = app
