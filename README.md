@@ -201,7 +201,7 @@ E por último, e não menos importante, agradeço também às minhas colegas de 
 <br>
 
 ## Feedback e sugestões
-Estou aberta à criticas e sugestões sobre o projeto. Sinta-se livre para entrar em contato comigo: 
+Estou aberta a criticas e sugestões sobre o projeto. Sinta-se livre para entrar em contato comigo: 
 
 - [@yaralviana](https://www.github.com/yaralviana)
 - [LinkedIn](https://www.linkedin.com/in/yaralviana/)
