@@ -4,6 +4,8 @@ const controller = require('../controller/reviewController')
 
 router.get('/', controller.getAll)
 router.get('/:id', controller.get)
-router.get('/create', controller.create)
+router.post('/create', controller.createReview)
+router.put('/create', controller.updateReview)
+router.delete('/delete', controller.deleteReview)
 
 module.exports = router

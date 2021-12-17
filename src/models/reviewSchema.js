@@ -11,7 +11,7 @@ const reviewSchema = new Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'brands'
     }, 
-    comentario: {
+    review: {
         type: String,
         required: true
     },
