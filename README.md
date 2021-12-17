@@ -10,7 +10,6 @@ A API WeCare foi inspirada pelo curta-metragem [_Save Ralph_](https://www.youtub
 <br></br>
 
 ## Sumário
-=================
 <!--ts-->
    * [Funcionalidades](#funcionalidades)
    * [Instalação](#instalação)
