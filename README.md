@@ -1,6 +1,6 @@
 # WeCare - Project
 
-<img src="src/assets/wecare.png">
+<img src="./assets/wecare.png">
 
 ## Apresentação
 A API WeCare foi inspirada pelo curta-metragem [_Save Ralph_](https://www.youtube.com/watch?v=G393z8s8nFY), sobre a situação de animais que são usados como cobaia para testes. O projeto visa a criação de uma plataforma onde o usuário/consumidor pode pesquisar sobre empresas _Cruelty Free_, aquelas que não fazem uso de animais para os testes de seus produtos. O usuário poderá visualizar as empresas já cadastradas e também inserir novos dados/empresas, que ainda não se encontram na plataforma. 
@@ -32,6 +32,7 @@ A API WeCare foi inspirada pelo curta-metragem [_Save Ralph_](https://www.youtub
 - Filtra por país de origem e categoria. (Exemplo: Maquiagem, produtos de limpeza, produtos de higiene)
 - Função de like e unlike
 - Adiciona review sobre as marcas
+- Data e hora de cadastro e review gerada automaticamente
 
 
 ## Instalação
@@ -111,11 +112,10 @@ Para acessar via Heroku, acesse o [link da API](https://wecare-project.herokuapp
 ### Pacotes Utilizados 
 
 - [Express](https://expressjs.com/pt-br/)
-- [Nodemon](https://nodemon.io/)
+- [nodemon](https://nodemon.io/)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [Mongoose](https://mongoosejs.com/)
 - [cors](https://www.npmjs.com/package/cors)
-- [modemon](https://www.npmjs.com/package/nodemon)
 
 
 <br>
@@ -194,7 +194,7 @@ Deve retornar:
 
 Agradeço a equipe [{reprograma}](https://reprograma.com.br/) por me dar a oportunidade de fazer parte de um projeto tão incrível com pessoas maravilhosas. Às minhas professoras do projeto, pela orientação exemplar e pelos conhecimentos passados, além de toda a compreensão e paciência demonstradas ao longo das aulas.
 <br>
-Agradeço ao meu namorado, Jardel, por todo o apoio e por ser uma pessoa tão especial em minha vida. Aos meus pais, Maria de Lourdes e Francisco por todo o suporte emocional e por sempre me apoiarem nos meus desafios. E aos meus amigos desenvolvedores que se disponibilizam a tirar minhas dúvidas sempre que possível. 
+Agradeço ao meu namorado, Jardel, por todo o apoio e por ser uma pessoa tão especial em minha vida. Aos meus pais, Maria de Lourdes e Francisco por todo o suporte emocional e por sempre me apoiarem nos meus desafios. À minha irmã, Ieda, por me incentivar desde a minha infância a estudar e ter disciplina. E aos meus amigos desenvolvedores que se disponibilizam a tirar minhas dúvidas sempre que possível. 
 <br>
 E por último, e não menos importante, agradeço também às minhas colegas de turma da TodasEmTech14 que são sempre muito solícitas e gentis umas com as outras. 💜
 <br>
