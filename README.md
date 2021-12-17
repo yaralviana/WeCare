@@ -17,7 +17,7 @@ A API WeCare foi inspirada pelo curta-metragem [_Save Ralph_](https://www.youtub
    * [Arquitetura Model View Controller](#arquitetura)
    * [Tecnologias](#tecnologias)
    * [Rotas](#rotas)
-   * [Modelo com campos obrigatórios para teste: Postman ou Insomnia](#modelo-com-campos-obrigatórios-para-teste)
+   * [Modelo com campos obrigatórios para teste: Postman ou Insomnia](#modelo-para-testes)
    * [Agradecimentos](#agradecimentos)
 <!--te-->
 
@@ -153,7 +153,7 @@ Para acessar via Heroku, acesse o [link da API](https://wecare-project.herokuapp
 | GET         | `/brands/:id/reviews`    | Exibe comentários sobre a marca          |
 
 
-## Modelo com campos obrigatórios para teste - Marcas
+## Modelo para testes
     {
                 "name": "artnaturals",
                 "category": ["higiene pessoal", "aromaterapia"],
@@ -193,8 +193,19 @@ Deve retornar:
         ]
 ## Agradecimentos
 
-Agradeço a equipe {reprograma} por me dar a oportunidade de fazer parte de um projeto tão incrível com pessoas maravilhosas. As minhas professoras do projeto, pela orientação exemplar e pelos conhecimentos passados, além de toda a compreensão e paciência demonstradas ao longo das aulas.
+Agradeço a equipe {reprograma} por me dar a oportunidade de fazer parte de um projeto tão incrível com pessoas maravilhosas. Às minhas professoras do projeto, pela orientação exemplar e pelos conhecimentos passados, além de toda a compreensão e paciência demonstradas ao longo das aulas.
 <br>
 Agradeço ao meu namorado, Jardel, por todo o apoio e por ser uma pessoa tão especial em minha vida. Aos meus pais, Maria de Lourdes e Francisco por todo o suporte emocional e por sempre me apoiarem nos meus desafios. E aos meus amigos desenvolvedores que se disponibilizam a tirar minhas dúvidas sempre que possível. 
 <br>
-E por último, e não menos importante, agradeço também as minhas colegas de turma da TodasEmTech14 que são sempre muito solícitas e gentis umas com as outras. 💜
+E por último, e não menos importante, agradeço também às minhas colegas de turma da TodasEmTech14 que são sempre muito solícitas e gentis umas com as outras. 💜
+<br>
+
+## Feedback e sugestões
+Estou aberta à criticas e sugestões sobre o projeto. Sinta-se livre para entrar em contato comigo: 
+
+- [@yaralviana](https://www.github.com/yaralviana)
+- [LinkedIn](https://www.linkedin.com/in/yaralviana/)
+- [E-mail](mailto:yaralviana@gmail.com)
+
+
+
