@@ -193,7 +193,7 @@ Deve retornar:
         ]
 ## Agradecimentos
 
-Agradeço a equipe {reprograma} por me dar a oportunidade de fazer parte de um projeto tão incrível com pessoas maravilhosas. Às minhas professoras do projeto, pela orientação exemplar e pelos conhecimentos passados, além de toda a compreensão e paciência demonstradas ao longo das aulas.
+Agradeço a equipe [{reprograma}](https://reprograma.com.br/) por me dar a oportunidade de fazer parte de um projeto tão incrível com pessoas maravilhosas. Às minhas professoras do projeto, pela orientação exemplar e pelos conhecimentos passados, além de toda a compreensão e paciência demonstradas ao longo das aulas.
 <br>
 Agradeço ao meu namorado, Jardel, por todo o apoio e por ser uma pessoa tão especial em minha vida. Aos meus pais, Maria de Lourdes e Francisco por todo o suporte emocional e por sempre me apoiarem nos meus desafios. E aos meus amigos desenvolvedores que se disponibilizam a tirar minhas dúvidas sempre que possível. 
 <br>
