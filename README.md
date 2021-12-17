@@ -16,6 +16,7 @@ A API WeCare foi inspirada pelo curta-metragem [_Save Ralph_](https://www.youtub
    * [Instalação](#instalação)
    * [Arquitetura Model View Controller](#arquitetura)
    * [Tecnologias](#tecnologias)
+   * [Rotas](#rotas)
    * [Modelo com campos obrigatórios para teste: Postman ou Insomnia](#modelo-com-campos-obrigatórios-para-teste)
    * [Agradecimentos](#agradecimentos)
 <!--te-->
@@ -27,7 +28,7 @@ A API WeCare foi inspirada pelo curta-metragem [_Save Ralph_](https://www.youtub
 ## Funcionalidades
 
 - Exibe marcas cadastradas
-- Cadastra de novas marcas
+- Cadastro de novas marcas
 - Atualiza dados
 - Filtra por país de origem categoria. (Exemplo: Maquiagem, produtos de limpeza, produtos de higiene)
 - Função de like e unlike
@@ -149,6 +150,9 @@ Para acessar via Heroku, acesse o [link da API](https://wecare-project.herokuapp
 | PATCH        | `/brands/:id/like`          | Adiciona like na marca           |
 | PATCH        | `/brands/:id/unlike`          | Retira like na marca           |
 
+
+## Modelo com campos obrigatórios para teste
+Em construção
 
 ## Agradecimentos
 
