@@ -3,7 +3,7 @@ const router = express.Router()
 const controller = require('../controller/brandsController')
 const reviewRoutes = require('./reviewRoutes')
 
-router.get('/all', controller.getAll)
+router.get('/', controller.getAll)
 router.get('/:id', controller.getId)
 router.patch("/:id/like", controller.like)
 router.patch("/:id/unlike", controller.unlike)

@@ -3,7 +3,7 @@
 <img src="src/assets/wecare.png">
 
 ## Apresentação
-A API WeCare foi inspirada pelo curta-metragem [_Save Ralph_](https://www.youtube.com/watch?v=G393z8s8nFY), sobre a situação de animais que são usados de cobaia para testes. O projeto visa a criação de uma plataforma onde o usuário/consumidor pode pesquisar sobre empresas _Cruelty Free_, aquelas que não fazem uso de animais para os testes de seus produtos. O usuário poderá visualizar as empresas já cadastradas e também inserir novos dados/empresas, que ainda não se encontram na plataforma. 
+A API WeCare foi inspirada pelo curta-metragem [_Save Ralph_](https://www.youtube.com/watch?v=G393z8s8nFY), sobre a situação de animais que são usados como cobaia para testes. O projeto visa a criação de uma plataforma onde o usuário/consumidor pode pesquisar sobre empresas _Cruelty Free_, aquelas que não fazem uso de animais para os testes de seus produtos. O usuário poderá visualizar as empresas já cadastradas e também inserir novos dados/empresas, que ainda não se encontram na plataforma. 
 
 
 
@@ -15,6 +15,7 @@ A API WeCare foi inspirada pelo curta-metragem [_Save Ralph_](https://www.youtub
    * [Funcionalidades](#funcionalidades)
    * [Instalação](#instalação)
    * [Arquitetura Model View Controller](#arquitetura)
+   * [Tecnologias](#tecnologias)
    * [Modelo com campos obrigatórios para teste: Postman ou Insomnia](#modelo-com-campos-obrigatórios-para-teste)
    * [Agradecimentos](#agradecimentos)
 <!--te-->
@@ -52,8 +53,6 @@ $ npm start
 * Modifique `.env` para receber as variáveis de ambiente e substitua para que seu servidor funcione adequadamente
 
 Para acessar via Heroku, acesse o [link da API](https://wecare-project.herokuapp.com/)
-
-* Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para testar os endpoints da API localmente ou via Heroku
 
 ##
 
@@ -121,3 +120,36 @@ Para acessar via Heroku, acesse o [link da API](https://wecare-project.herokuapp
 
 <br>
 
+## Rotas
+
+* local: http://localhost:3000
+
+* Heroku: https://wecare-project.herokuapp.com/
+
+    * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para testar os endpoints da API localmente ou via Heroku
+
+<br>
+
+
+| Método HTTP  | Endpoint                     | Descrição                            |
+| ------------ | ---------------------------- | ------------------------------------ |
+| GET          | `http://localhost:3000/`     |  Mensagem de boas vindas    |             |
+
+<br>
+
+## Manipulação das rotas
+
+| Método HTTP  | Endpoint                | Descrição                            |
+| ------------ | ----------------------- | ------------------------------------ |
+| GET          | `/brands`              | Retorna todas as marcas             | 
+| GET          | `/brands/:id`          | Retorna marca por id      |
+| POST         | `/brands/create`    | Cria/cadastra nova marca          |
+| PUT          | `/brands/:id/update`          | Altera informações de um autor       |
+| DELETE        | `/brands/:id/delete`          | Remove uma marca           |
+| PATCH        | `/brands/:id/like`          | Adiciona like na marca           |
+| PATCH        | `/brands/:id/unlike`          | Retira like na marca           |
+
+
+## Agradecimentos
+
+Em construção
