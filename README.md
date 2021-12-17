@@ -145,15 +145,56 @@ Para acessar via Heroku, acesse o [link da API](https://wecare-project.herokuapp
 | GET          | `/brands`              | Retorna todas as marcas             | 
 | GET          | `/brands/:id`          | Retorna marca por id      |
 | POST         | `/brands/create`    | Cria/cadastra nova marca          |
-| PUT          | `/brands/:id/update`          | Altera informações de um autor       |
+| PUT          | `/brands/:id/update`          | Altera informações de uma marca       |
 | DELETE        | `/brands/:id/delete`          | Remove uma marca           |
 | PATCH        | `/brands/:id/like`          | Adiciona like na marca           |
 | PATCH        | `/brands/:id/unlike`          | Retira like na marca           |
+| POST         | `/brands/:id/reviews`    | Adiciona comentário sobre a marca          |
+| GET         | `/brands/:id/reviews`    | Exibe comentários sobre a marca          |
 
 
-## Modelo com campos obrigatórios para teste
-Em construção
+## Modelo com campos obrigatórios para teste - Marcas
+    {
+                "name": "artnaturals",
+                "category": ["higiene pessoal", "aromaterapia"],
+                "country": "eua"
+    }
 
+Deve retornar:
+
+    {
+        "_id": "61bccc6ce6a3b54c5dede488",
+        "name": "artnaturals",
+        "category": [
+            "higiene pessoal",
+            "aromaterapia"
+        ],
+        "country": "eua",
+        "likes": 0,
+        "submitted": "2021-12-17T17:43:20.746Z",
+        "__v": 0
+    }
+<br>
+
+## Reviews
+        {
+            "review": "Ótimos produtos. Recomendo."
+        }
+
+Deve retornar: 
+
+        [
+            {
+                "_id": "61bcccc7e6a3b54c5dede48d",
+                "review": "Ótimos produtos. Recomendo.",
+                "submitted": "2021-12-17T17:43:20.756Z",
+                "__v": 0
+            }
+        ]
 ## Agradecimentos
 
-Em construção
+Agradeço a equipe {reprograma} por me dar a oportunidade de fazer parte de um projeto tão incrível com pessoas maravilhosas. As minhas professoras do projeto, pela orientação exemplar e pelos conhecimentos passados, além de toda a compreensão e paciência demonstradas ao longo das aulas.
+<br>
+Agradeço ao meu namorado, Jardel, por todo o apoio e por ser uma pessoa tão especial em minha vida. Aos meus pais, Maria de Lourdes e Francisco por todo o suporte emocional e por sempre me apoiarem nos meus desafios. E aos meus amigos desenvolvedores que se disponibilizam a tirar minhas dúvidas sempre que possível. 
+<br>
+E por último, e não menos importante, agradeço também as minhas colegas de turma da TodasEmTech14 que são sempre muito solícitas e gentis umas com as outras. 💜
