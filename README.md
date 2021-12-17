@@ -28,7 +28,7 @@ A API WeCare foi inspirada pelo curta-metragem [_Save Ralph_](https://www.youtub
 - Exibe marcas cadastradas
 - Cadastra de novas marcas
 - Atualiza dados
-- Filtra por categoria (Exemplo: Maquiagem, produtos de limpeza, produtos de higiêne) e país
+- Filtra por país de origem categoria. (Exemplo: Maquiagem, produtos de limpeza, produtos de higiene)
 - Função de like e unlike
 - Adiciona review sobre as marcas
 

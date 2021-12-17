@@ -19,6 +19,11 @@ const brandsSchema = new mongoose.Schema({
         type: Number,
         required: false,
         default: 0
+    },
+    submitted: {
+        type: Date,
+        required: true,
+        default: new Date
     }
      
 })

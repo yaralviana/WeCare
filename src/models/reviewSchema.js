@@ -15,6 +15,11 @@ const reviewSchema = new Schema({
         type: String,
         required: true
     },
+    submitted: {
+        type: Date,
+        required: true,
+        default: new Date
+    }
 })
 
 const reviewCollection = mongoose.model('review', reviewSchema)
