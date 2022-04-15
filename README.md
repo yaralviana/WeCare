@@ -190,6 +190,13 @@ Deve retornar:
                 "__v": 0
             }
         ]
+
+## Futuras melhorias
+- Autenticação nas rotas
+- Frontend com React
+- Criar testes unitários/de integração
+- Colocar a aplicação em container
+
 ## Agradecimentos
 
 Agradeço a equipe [{reprograma}](https://reprograma.com.br/) por me dar a oportunidade de fazer parte de um projeto tão incrível com pessoas maravilhosas. Às minhas professoras do projeto, pela orientação exemplar e pelos conhecimentos passados, além de toda a compreensão e paciência demonstradas ao longo das aulas.
